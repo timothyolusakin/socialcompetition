@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="col-lg-6">
+    <div class="box-quote bg-gray-100">
+        <ul>
+            {% for skill in skill %}
+                <li>{{ skill.skills }}</li>    
+            {% else %}
+                <li>nothing</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+<form action="{{url_for('admin.add_category')}}" method="Post">
+    <div class="col-lg-6">
+        <div class="box-quote bg-gray-100">
+            <div class="form-wrap">
+                <input class="form-input" id="contact-name" type="text" name="skill"
+                    data-constraints="@Required">
+                <label class="form-label" for="contact-name">Add new Category/Skills:</label>
+            </div>
+        </div>
+        <button class="button button-block button-secondary button-lg" type="submit">SUBMIT</button>
+    </div>
+</form>
+{% endblock %}

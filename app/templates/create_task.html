@@ -1,1 +1,94 @@
 {% extends "layout.html" %}
+
+{% block body %}
+<section class="section section-md bg-gray-600 pb-lg-0">
+    <div class="container">
+        <div class="row row-50">
+            <div class="col-lg-6">
+                <h2 class="mt-lg-26">Create cute websites</h2>
+                <h1>fast with us!</h1>
+                <ul class="list-marked-modern pr-xl-5">
+                    <li>
+                        <div class="unit unit-spacing-xs">
+                            <div class="unit-left">
+                                <div class="icon novi-icon icon-lg text-primary flaticon-check64"></div>
+                            </div>
+                            <div class="unit-body">
+                                <h4 class="text-primary">Designed by industry professionals</h4>
+                                <p>Every website we designed and developed for our numerous customers is backed by over
+                                    20 years of
+                                    experience our team has.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="unit unit-spacing-xs">
+                            <div class="unit-left">
+                                <div class="icon novi-icon icon-lg text-primary flaticon-check64"></div>
+                            </div>
+                            <div class="unit-body">
+                                <h4 class="text-primary">Fully responsive</h4>
+                                <p>At Wrico, we design and develop highly responsive and reliable websites for the needs
+                                    of our
+                                    clients and partners.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="unit unit-spacing-xs">
+                            <div class="unit-left">
+                                <div class="icon novi-icon icon-lg text-primary flaticon-check64"></div>
+                            </div>
+                            <div class="unit-body">
+                                <h4 class="text-primary">Designed to sell</h4>
+                                <p>We guarantee every website we create for you will improve your company’s image and
+                                    increase the
+                                    conversion rate.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <div class="box-quote bg-gray-100">
+                    <h3>Request a quote now!</h3>
+                    <p>If you need a high-quality website, feel free to select one of desired solutions and request a
+                        quote
+                        using the form below.</p>
+                    <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact"
+                        method="post" action="{{url_for('admin.registeration')}}">
+                        <div class="form-wrap">
+                            <input class="form-input" id="contact-name" type="text" name="name"
+                                data-constraints="@Required">
+                            <label class="form-label" for="contact-name">Name:</label>
+                        </div>
+                        <div class="form-wrap">
+                            <input class="form-input" id="contact-name" type="text" name="instagram_username"
+                                data-constraints="@Required">
+                            <label class="form-label" for="contact-name">Instagram Username:</label>
+                        </div>
+                        <div class="form-wrap">
+                            <input class="form-input" id="contact-email" type="email" name="email"
+                                data-constraints="@Email @Required">
+                            <label class="form-label" for="contact-email">E-mail:</label>
+                        </div>
+                        <div class="form-wrap">
+                            <!-- Select 2-->
+                            <select multiple class="form-input select" data-placeholder="Select Skill"
+                                data-constraints="@Required">
+                                <option label="placeholder"></option>
+                                <option value="2">Make up</option>
+                                <option value="3">PhotoGraphy</option>
+                                <option value="4">Web Development</option>
+                                <option value="5">UX Research</option>
+                            </select>
+                        </div>
+                        <button class="button button-block button-secondary button-lg" type="submit">Get a
+                            quote!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

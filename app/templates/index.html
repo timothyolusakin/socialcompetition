@@ -80,14 +80,12 @@
                             <select multiple class="form-input select" data-placeholder="Select Skill"
                                 data-constraints="@Required">
                                 <option label="placeholder"></option>
-                                <option value="2">Make up</option>
-                                <option value="3">PhotoGraphy</option>
-                                <option value="4">Web Development</option>
-                                <option value="5">UX Research</option>
+                                {% for skill in skill %}
+                                    <option value="{{ skill.id }}">{{ skill.skills }}</option>
+                                {% endfor %}
                             </select>
                         </div>
-                        <button class="button button-block button-secondary button-lg" type="submit">Get a
-                            quote!</button>
+                        <button class="button button-block button-secondary button-lg" type="submit">Submit</button>
                     </form>
                 </div>
             </div>

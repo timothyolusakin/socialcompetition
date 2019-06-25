@@ -29,7 +29,7 @@ def registeration():
         )
         db.session.add(creative)
         db.session.commit()
-    return render_template("index.html")
+    return render_template("index.html",skill = skills)
 
 """@admin.route('/login',methods=['GET','POST'])
 def login():
@@ -40,8 +40,9 @@ def admindashboard():
 
     return render_template("admin-dashboard.html")
 
-@admin.route('/create-task')
+@admin.route('/create-task',methods=['GET','POST'])
 def createtask():
+    
     return render_template("create_task.html")
 
 @admin.route('/view-attendee')
@@ -77,3 +78,15 @@ def activate(token):
     creative.active = "Yes"
     db.session.commit()
     return redirect(url_for('admin.accept_new_creatives'))
+
+@admin.route('/add-skills',methods=['GET','POST'])
+def add_category():
+    skilled = Skills.query.all()
+    if request.method == 'POST':
+        skilli = Skills(
+            skills = request.form['skill']
+        )
+        db.session.add(skilli)
+        db.session.commit()
+        return redirect(url_for("admin.add_category"))
+    return render_template('add_category.html',skill = skilled)
