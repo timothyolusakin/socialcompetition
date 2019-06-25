@@ -1,0 +1,572 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+<!-- Create cute websites-->
+<section class="section section-md bg-gray-600 pb-lg-0">
+    <div class="container">
+        <div class="row row-50">
+            <div class="col-lg-6">
+                <h2 class="mt-lg-26">Create cute websites</h2>
+                <h1>fast with us!</h1>
+                <ul class="list-marked-modern pr-xl-5">
+                    <li>
+                        <div class="unit unit-spacing-xs">
+                            <div class="unit-left">
+                                <div class="icon novi-icon icon-lg text-primary flaticon-check64"></div>
+                            </div>
+                            <div class="unit-body">
+                                <h4 class="text-primary">Designed by industry professionals</h4>
+                                <p>Every website we designed and developed for our numerous customers is backed by over
+                                    20 years of
+                                    experience our team has.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="unit unit-spacing-xs">
+                            <div class="unit-left">
+                                <div class="icon novi-icon icon-lg text-primary flaticon-check64"></div>
+                            </div>
+                            <div class="unit-body">
+                                <h4 class="text-primary">Fully responsive</h4>
+                                <p>At Wrico, we design and develop highly responsive and reliable websites for the needs
+                                    of our
+                                    clients and partners.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="unit unit-spacing-xs">
+                            <div class="unit-left">
+                                <div class="icon novi-icon icon-lg text-primary flaticon-check64"></div>
+                            </div>
+                            <div class="unit-body">
+                                <h4 class="text-primary">Designed to sell</h4>
+                                <p>We guarantee every website we create for you will improve your company’s image and
+                                    increase the
+                                    conversion rate.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <div class="box-quote bg-gray-100">
+                    <h3>Request a quote now!</h3>
+                    <p>If you need a high-quality website, feel free to select one of desired solutions and request a
+                        quote
+                        using the form below.</p>
+                    <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact"
+                        method="post" action="{{url_for('admin.registeration')}}">
+                        <div class="form-wrap">
+                            <input class="form-input" id="contact-name" type="text" name="name"
+                                data-constraints="@Required">
+                            <label class="form-label" for="contact-name">Name:</label>
+                        </div>
+                        <div class="form-wrap">
+                            <input class="form-input" id="contact-name" type="text" name="instagram_username"
+                                data-constraints="@Required">
+                            <label class="form-label" for="contact-name">Instagram Username:</label>
+                        </div>
+                        <div class="form-wrap">
+                            <input class="form-input" id="contact-email" type="email" name="email"
+                                data-constraints="@Email @Required">
+                            <label class="form-label" for="contact-email">E-mail:</label>
+                        </div>
+                        <div class="form-wrap">
+                            <!-- Select 2-->
+                            <select multiple class="form-input select" data-placeholder="Select Skill"
+                                data-constraints="@Required">
+                                <option label="placeholder"></option>
+                                <option value="2">Make up</option>
+                                <option value="3">PhotoGraphy</option>
+                                <option value="4">Web Development</option>
+                                <option value="5">UX Research</option>
+                            </select>
+                        </div>
+                        <button class="button button-block button-secondary button-lg" type="submit">Get a
+                            quote!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services-->
+<section class="section section-lg bg-gray-100">
+    <div class="container">
+        <div class="row row-30">
+            <div class="col-xl-4 col-md-6">
+                <div class="box-modern">
+                    <div class="icon novi-icon icon-xl text-primary flaticon-notebook79"></div>
+                    <div class="box-modern-body">
+                        <h4 class="box-modern-title"><a href="#">Creative Design</a></h4>
+                        <p class="box-modern-text">All our websites and web design projects are entirely based on
+                            creativity and
+                            innovations.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="box-modern">
+                    <div class="icon novi-icon icon-xl text-primary flaticon-hand226"></div>
+                    <div class="box-modern-body">
+                        <h4 class="box-modern-title"><a href="#">Clear Code</a></h4>
+                        <p class="box-modern-text">The code of our websites is 100% clear in accordance with modern
+                            standards of
+                            web development.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="box-modern">
+                    <div class="icon novi-icon icon-xl text-primary flaticon-bulb19"></div>
+                    <div class="box-modern-body">
+                        <h4 class="box-modern-title"><a href="#">Qualified Team</a></h4>
+                        <p class="box-modern-text">Our professional team ensures the best look, style, and performance
+                            of all
+                            Wrico projects.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="box-modern">
+                    <div class="icon novi-icon icon-xl text-primary flaticon-gift84"></div>
+                    <div class="box-modern-body">
+                        <h4 class="box-modern-title"><a href="#">Quality Control</a></h4>
+                        <p class="box-modern-text">QA specialists of inWeb ensure the best work of our websites to
+                            achieve the
+                            top results for you.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="box-modern">
+                    <div class="icon novi-icon icon-xl text-primary flaticon-sheet3"></div>
+                    <div class="box-modern-body">
+                        <h4 class="box-modern-title"><a href="#">Dedicated 24/7 Support</a></h4>
+                        <p class="box-modern-text">You can rely on our 24/7 tech support that will gladly solve any
+                            website
+                            issue you may have.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="box-modern">
+                    <div class="icon novi-icon icon-xl text-primary flaticon-screwdriver26"></div>
+                    <div class="box-modern-body">
+                        <h4 class="box-modern-title"><a href="#">Individual Approach</a></h4>
+                        <p class="box-modern-text">Our approach to clients allows us to create unique websites that
+                            satisfy your
+                            corporate needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Discover the advantages-->
+<section class="section section-lg section-lg-2 bg-default">
+    <div class="container">
+        <div class="row row-50 align-items-center">
+            <div class="col-lg-6"><img src="images/home-01-550x300.jpg" alt="" width="550" height="300" />
+            </div>
+            <div class="col-lg-6">
+                <h3>Discover the advantages</h3>
+                <p>There are lots of advantages of hiring our web design studio. A professional web design agency has
+                    all
+                    the resources you need to succeed in a short period of time. Here’s what our web design studio can
+                    offer
+                    you:</p>
+                <ul class="list-advantages">
+                    <li>
+                        <div class="unit unit-spacing-md align-items-center">
+                            <div class="unit-left">
+                                <div class="icon novi-icon flaticon-password19"></div>
+                            </div>
+                            <div class="unit-body">
+                                <p>Outstanding creativity</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="unit unit-spacing-md align-items-center">
+                            <div class="unit-left">
+                                <div class="icon novi-icon flaticon-message30"></div>
+                            </div>
+                            <div class="unit-body">
+                                <p>High professionalism</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="unit unit-spacing-md align-items-center">
+                            <div class="unit-left">
+                                <div class="icon novi-icon flaticon-setting5"></div>
+                            </div>
+                            <div class="unit-body">
+                                <p>Focus on customer needs</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="unit unit-spacing-md align-items-center">
+                            <div class="unit-left">
+                                <div class="icon novi-icon flaticon-briefcase65"></div>
+                            </div>
+                            <div class="unit-body">
+                                <p>Innovative technology</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features-->
+<section class="section section-features">
+    <div class="box-features text-center bg-primary">
+        <div class="icon novi-icon icon-xxl flaticon-download3"></div>
+        <h4><a href="#">Your Data in Cloud</a></h4>
+        <p>All websites that we design for our customers are provided with reliable cloud storage. It is a cloud
+            computing model, in which data is stored on remote servers that are maintained, operated and managed by
+            Wrico.
+        </p>
+    </div>
+    <div class="box-features text-center bg-gray-600">
+        <div class="icon novi-icon icon-xxl text-primary flaticon-gift84"></div>
+        <h4><a href="#">Monthly Rewards</a></h4>
+        <p>Our regular clients receive monthly rewards and special discounts that allow them to get even more benefits
+            from our services and solutions. They include special prices on UI and UX design and other great bonuses.
+        </p>
+    </div>
+    <div class="box-features text-center bg-gray-100">
+        <div class="icon novi-icon icon-xxl text-primary flaticon-rain2"></div>
+        <h4><a href="#">24/7 Support</a></h4>
+        <p>Our friendly and highly qualified support is always available to help you solve any issue you may have with
+            our website. Whether you need to update scripts, edit the existing content or something else, we are here to
+            help.</p>
+    </div>
+</section>
+
+<!-- Pricing-->
+<section class="section section-lg section-lg-3 bg-default text-center">
+    <div class="container">
+        <h3>Pricing</h3>
+        <div class="row row-30 justify-content-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing">
+                    <div class="pricing-header">
+                        <h4 class="pricing-title text-primary">Elementary</h4>
+                        <div class="pricing-price">
+                            <h3 class="pricing-amount">$158</h3><span class="pricing-duration">/ month</span>
+                        </div>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-list">
+                            <li>Web Design</li>
+                            <li>Web Development</li>
+                            <li>Free QA Consultation</li>
+                            <li>Phone Support</li>
+                        </ul><a class="button button-primary" href="#">Buy now!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing">
+                    <div class="pricing-header">
+                        <h4 class="pricing-title text-primary">Advanced</h4>
+                        <div class="pricing-price">
+                            <h3 class="pricing-amount">$178</h3><span class="pricing-duration">/ month</span>
+                        </div>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-list">
+                            <li>Concept Development</li>
+                            <li>UI Design</li>
+                            <li>Quality Assurance</li>
+                            <li>E-mail Support</li>
+                        </ul><a class="button button-primary" href="#">Buy now!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="pricing">
+                    <div class="pricing-header">
+                        <h4 class="pricing-title text-primary">Premium</h4>
+                        <div class="pricing-price">
+                            <h3 class="pricing-amount">$198</h3><span class="pricing-duration">/ month</span>
+                        </div>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-list">
+                            <li>Insights &amp; Analytics</li>
+                            <li>Content Strategy</li>
+                            <li>UX Design</li>
+                            <li>24/7 Support</li>
+                        </ul><a class="button button-primary" href="#">Buy now!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery-->
+<section class="section section-lg section-lg-3 bg-default text-center">
+    <div class="container">
+        <h3>Gallery</h3>
+    </div>
+    <!-- Owl Carousel-->
+    <div class="owl-carousel" data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="4" data-dots="true"
+        data-mouse-drag="false" data-lightgallery="group">
+        <article class="thumbnail"><a href="images/gallery/gallery-01-1000x667.jpg" data-lightgallery="item"><img
+                    src="images/gallery-thumb-01-512x300.jpg" alt="" width="512" height="300" />
+                <div class="thumbnail-overlay">
+                    <div class="thumbnail-button fa fa-search-plus"></div>
+                </div>
+            </a></article>
+        <article class="thumbnail"><a href="images/gallery/gallery-02-1000x667.jpg" data-lightgallery="item"><img
+                    src="images/gallery-thumb-02-512x300.jpg" alt="" width="512" height="300" />
+                <div class="thumbnail-overlay">
+                    <div class="thumbnail-button fa fa-search-plus"></div>
+                </div>
+            </a></article>
+        <article class="thumbnail"><a href="images/gallery/gallery-03-1000x667.jpg" data-lightgallery="item"><img
+                    src="images/gallery-thumb-03-512x300.jpg" alt="" width="512" height="300" />
+                <div class="thumbnail-overlay">
+                    <div class="thumbnail-button fa fa-search-plus"></div>
+                </div>
+            </a></article>
+        <article class="thumbnail"><a href="images/gallery/gallery-04-1000x667.jpg" data-lightgallery="item"><img
+                    src="images/gallery-thumb-04-512x300.jpg" alt="" width="512" height="300" />
+                <div class="thumbnail-overlay">
+                    <div class="thumbnail-button fa fa-search-plus"></div>
+                </div>
+            </a></article>
+    </div>
+</section>
+
+<!-- FAQs-->
+<section class="section section-lg bg-default">
+    <div class="container">
+        <h3 class="text-center">FAQs</h3>
+        <div class="row row-30">
+            <div class="col-md-6">
+                <h4>How long does it take to create a website and how much does it cost?</h4>
+                <p>The length of time it takes to create a fully functional website is based on several factors. Custom
+                    design work can take anywhere from 1 - 4 weeks, depending on the complexity of the design and the
+                    number
+                    of revisions you require. The development phase requires an additional 1 - 6 weeks, depending on the
+                    number of pages, and the functionality you need for your website to have. Of course, these are
+                    general
+                    guidelines, and we will make every effort to meet the timeframe you have in mind. A fully
+                    customized,
+                    unique website design starts at $449, and page development is $50 - $75 each.</p>
+            </div>
+            <div class="col-md-6">
+                <!--Bootstrap collapse-->
+                <div class="card-group-custom card-group-corporate" id="accordion1" role="tablist"
+                    aria-multiselectable="false">
+                    <!--Bootstrap card-->
+                    <article class="card card-custom card-corporate">
+                        <div class="card-header" role="tab">
+                            <div class="card-title"><a id="accordion1-card-head-evqqxdig" data-toggle="collapse"
+                                    data-parent="#accordion1" href="#accordion1-card-body-enjpahwy"
+                                    aria-controls="accordion1-card-body-enjpahwy" aria-expanded="true"
+                                    role="button">What are the
+                                    advantages of purchasing a website template?
+                                    <div class="card-arrow"></div></a></div>
+                        </div>
+                        <div class="collapse show" id="accordion1-card-body-enjpahwy"
+                            aria-labelledby="accordion1-card-head-evqqxdig" data-parent="#accordion1" role="tabpanel">
+                            <div class="card-body">
+                                <p>The major advantage is price: You get a high quality design for just $20-$70. You
+                                    don’t have to
+                                    hire a web designer or web design studio. Second advantage is time frame: It usually
+                                    takes 5-15
+                                    days for a good designer to produce a web page of such quality.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <!--Bootstrap card-->
+                    <article class="card card-custom card-corporate">
+                        <div class="card-header" role="tab">
+                            <div class="card-title"><a class="collapsed" id="accordion1-card-head-fjlcomax"
+                                    data-toggle="collapse" data-parent="#accordion1"
+                                    href="#accordion1-card-body-wqcgekhi" aria-controls="accordion1-card-body-wqcgekhi"
+                                    aria-expanded="false" role="button">Do you provide
+                                    any scripts with your templates or could you do some custom programming?
+                                    <div class="card-arrow"></div></a></div>
+                        </div>
+                        <div class="collapse" id="accordion1-card-body-wqcgekhi"
+                            aria-labelledby="accordion1-card-head-fjlcomax" data-parent="#accordion1" role="tabpanel">
+                            <div class="card-body">
+                                <p>Our templates do not include any additional scripts. Newsletter subscriptions, search
+                                    fields,
+                                    forums, image galleries (in HTML versions of Flash products) are inactive. Basic
+                                    scripts can be
+                                    easily added at www.zemez.io If you are not sure that the element you’re interested
+                                    in is active
+                                    please contact our Support Chat for clarification.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <!--Bootstrap card-->
+                    <article class="card card-custom card-corporate">
+                        <div class="card-header" role="tab">
+                            <div class="card-title"><a class="collapsed" id="accordion1-card-head-utrbgedc"
+                                    data-toggle="collapse" data-parent="#accordion1"
+                                    href="#accordion1-card-body-efrpiucy" aria-controls="accordion1-card-body-efrpiucy"
+                                    aria-expanded="false" role="button">What do I
+                                    receive when I order a template from Zemez?
+                                    <div class="card-arrow"></div></a></div>
+                        </div>
+                        <div class="collapse" id="accordion1-card-body-efrpiucy"
+                            aria-labelledby="accordion1-card-head-utrbgedc" data-parent="#accordion1" role="tabpanel">
+                            <div class="card-body">
+                                <p>After you complete the payment via our secure form you will receive the instructions
+                                    for
+                                    downloading the product. The source files in the download package can vary based on
+                                    the type of
+                                    the product you have purchased.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials-->
+<section class="section section-lg section-lg-4 bg-gray-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-11">
+                <!-- Owl Carousel-->
+                <div class="owl-carousel" data-items="1" data-stage-padding="15" data-dots="true" data-margin="30"
+                    data-mouse-drag="false">
+                    <div class="quote">
+                        <div class="quote-info unit unit-spacing-md justify-content-center align-items-center">
+                            <div class="unit-left">
+                                <figure class="quote-figure"><img class="rounded-circle"
+                                        src="images/testimonials-01-91x91.jpg" alt="" width="91" height="91" />
+                                </figure>
+                            </div>
+                            <div class="unit-body">
+                                <h5 class="quote-title">Tom Cooper</h5>
+                                <p class="quote-position text-primary">Regular Customer</p>
+                            </div>
+                        </div>
+                        <div class="quote-body">
+                            <q class="heading-4">After an extensive search, we had chosen Wrico to create a website for
+                                us. Their
+                                team has exceeded our expectations on all levels and we are glad we have used their
+                                services.</q>
+                        </div>
+                    </div>
+                    <div class="quote">
+                        <div class="quote-info unit unit-spacing-md justify-content-center align-items-center">
+                            <div class="unit-left">
+                                <figure class="quote-figure"><img class="rounded-circle"
+                                        src="images/testimonials-02-91x91.jpg" alt="" width="91" height="91" />
+                                </figure>
+                            </div>
+                            <div class="unit-body">
+                                <h5 class="quote-title">Angela Barnes</h5>
+                                <p class="quote-position text-primary">Regular Customer</p>
+                            </div>
+                        </div>
+                        <div class="quote-body">
+                            <q class="heading-4">We worked with this studio for the website upgrade to meet the demands
+                                of new
+                                technology. Now our site is truly spectacular and has lots of great features thanks to
+                                the efforts
+                                of Wrico.</q>
+                        </div>
+                    </div>
+                    <div class="quote">
+                        <div class="quote-info unit unit-spacing-md justify-content-center align-items-center">
+                            <div class="unit-left">
+                                <figure class="quote-figure"><img class="rounded-circle"
+                                        src="images/testimonials-03-91x91.jpg" alt="" width="91" height="91" />
+                                </figure>
+                            </div>
+                            <div class="unit-body">
+                                <h5 class="quote-title">Kirk Walsh</h5>
+                                <p class="quote-position text-primary">Regular Customer</p>
+                            </div>
+                        </div>
+                        <div class="quote-body">
+                            <q class="heading-4">I love my new website that Wrico’s team created. They gave it a unique
+                                and very
+                                powerful upgrade. My clients love it as they can use it on their mobile phones with
+                                ease.</q>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Socials-->
+<section class="section section-xs bg-primary">
+    <div class="container">
+        <ul class="social-list">
+            <li><a href="#">
+                    <div class="icon novi-icon social-icon fa fa-facebook"></div>
+                </a></li>
+            <li><a href="#">
+                    <div class="icon novi-icon social-icon fa fa-twitter"></div>
+                </a></li>
+            <li><a href="#">
+                    <div class="icon novi-icon social-icon fa fa-skype"></div>
+                </a></li>
+            <li><a href="#">
+                    <div class="icon novi-icon social-icon fa fa-google-plus"></div>
+                </a></li>
+            <li><a href="#">
+                    <div class="icon novi-icon social-icon fa fa-instagram"></div>
+                </a></li>
+            <li><a href="#">
+                    <div class="icon novi-icon social-icon fa fa-vimeo-square"></div>
+                </a></li>
+        </ul>
+    </div>
+</section>
+
+<!-- Subscribe-->
+<section class="section section-sm bg-default">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-10">
+                <div class="box-subscribe">
+                    <h4>Newsletter</h4>
+                    <div class="rd-form-wrap">
+                        <form class="rd-form rd-mailform rd-form-inline" data-form-output="form-output-global"
+                            data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+                            <div class="form-wrap">
+                                <input class="form-input" id="subscribe-form-email" type="email" name="email"
+                                    data-constraints="@Email @Required">
+                                <label class="form-label" for="subscribe-form-email">Your E-mail</label>
+                            </div>
+                            <div class="form-button">
+                                <button class="button button-primary" type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

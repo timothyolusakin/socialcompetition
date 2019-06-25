@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<section class="section section-lg bg-gray-100">
+    <div class="container">
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Instagram name </th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            {% for creative in creatives  %}
+            <tbody>
+              <tr>
+                <td>{{ creative.name }}</td>
+                <td>{{ creative.email }}</td>
+                <td>{{ creative.instagram_account }}</td>
+                <td>{{ creative.active }}</td>
+                <td><a href="{{ url_for('admin.accept',id = creative.id) }}"><span class="label label-primary">Accept</span></a></td>
+              </tr>
+            </tbody>
+            {% endfor %}
+        </table>
+    </div>
+</section>
+
+{% endblock %}

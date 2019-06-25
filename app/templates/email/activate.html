@@ -1,0 +1,16 @@
+<p>Dear {{ user.name }}</p>
+<p>
+    <p>We reviewed your profile and would like to have you as part of our creatives</p>
+    <p>To accept our invitation pls click on the link below</p>
+    <a href="{{ url_for('admin.activate', token=token, _external=True) }}">
+        Click here
+    </a>
+</p>
+<p>
+    Alternatively you can paste the following link in your browser's address bar:
+</p>
+<p>
+    {{ url_for('admin.activate', token=token, _external=True) }}
+</p>
+<P>Sincerely,</P>
+<p>Social app</p>
