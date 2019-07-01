@@ -78,7 +78,7 @@
                         <div class="form-wrap">
                             <!-- Select 2-->
                             <select multiple class="form-input select" data-placeholder="Select Skill"
-                                data-constraints="@Required">
+                                data-constraints="@Required" name="skills">
                                 <option label="placeholder"></option>
                                 {% for skill in skill %}
                                     <option value="{{ skill.id }}">{{ skill.skills }}</option>

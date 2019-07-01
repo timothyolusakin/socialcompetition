@@ -3,13 +3,23 @@
 {% block body %}
 <div class="col-lg-6">
     <div class="box-quote bg-gray-100">
-        <ul>
-            {% for skill in skill %}
-                <li>{{ skill.skills }}</li>    
-            {% else %}
-                <li>nothing</li>
-            {% endfor %}
-        </ul>
+            <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Skill</th>
+                        <th>   </th>
+                        
+                      </tr>
+                    </thead>
+                    {% for skill in skill  %}
+                    <tbody>
+                      <tr>
+                        <td>{{ skill.skills }}</td>
+                        <td><a href="{{ url_for('admin.delete_category', id=skill.id) }}">Delete</a></td>
+                      </tr>
+                    </tbody>
+                    {% endfor %}
+                </table>
     </div>
 </div>
 <form action="{{url_for('admin.add_category')}}" method="Post">

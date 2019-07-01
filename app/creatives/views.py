@@ -1,5 +1,5 @@
 from . import creatives
-from ..model import Skills,Creatives,db
+from ..model import Skill,Creatives,db
 from flask import request,render_template,redirect,url_for
 
 
